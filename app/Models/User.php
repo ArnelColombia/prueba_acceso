@@ -7,10 +7,11 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Passport\HasApiTokens;
+use Spatie\Permission\Traits\HasRoles;
 
 class User extends Authenticatable
 {
-    use HasApiTokens, HasFactory, Notifiable;
+    use HasApiTokens, HasRoles, HasFactory, Notifiable;
 
     /**
      * The attributes that are mass assignable.
@@ -22,6 +23,8 @@ class User extends Authenticatable
         'email',
         'password',
     ];
+
+    protected $guard_name = "Backoffice";
 
     /**
      * The attributes that should be hidden for arrays.
@@ -41,4 +44,19 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function status()
+    {
+        return $this->belongsTo(Status::class);
+    }
+
+    public function city()
+    {
+        return $this->belongsTo(City::class);
+    }
+
+    public function document_type()
+    {
+        return $this->belongsTo(DocumentType::class);
+    }
 }

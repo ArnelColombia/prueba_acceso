@@ -22,6 +22,7 @@ try {
 window.axios = require('axios');
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+window.axios.defaults.headers.common['Authorization'] = JSON.parse(localStorage.getItem('accessToken')) ? "Bearer " + JSON.parse(localStorage.getItem('accessToken')) : "";
 
 /**
  * Echo exposes an expressive API for subscribing to channels and listening
