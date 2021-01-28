@@ -1,0 +1,173 @@
+$border-width: 1px !default;
+/* Global Variables */
+$enable-caret: true !default;
+$enable-rounded: true !default;
+$enable-shadows: true !default;
+$enable-gradients: false !default;
+$enable-transitions: true !default;
+$enable-grid-classes: true !default;
+$enable-print-styles: true !default;
+$body-bg: #f8f9fe !default;
+/* Theme Colors */
+$default: #172b4d !default;
+$primary: #5e72e4 !default;
+$secondary: #f7fafc !default;
+$success: #3aaf85 !default;
+$danger: #cd201f !default;
+$warning: #fb6340 !default;
+
+$white: #fff !default;
+$gray-100: #f6f9fc !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #8898aa !default;
+$gray-700: #525f7f !default;
+$gray-800: #32325d !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+$card-spacer-y: 1.25rem !default;
+$card-spacer-x: 1.5rem !default;
+$body-color: $gray-700 !default;
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    'default': $default,
+    'primary': $primary,
+    'secondary': $secondary,
+    'success': $success,
+    'danger': $danger,
+    'warning': $warning,
+  ),
+  $theme-colors
+);
+
+/* Transform */
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 600 !default;
+$font-weight-extra-bold: 700 !default;
+
+/* Transition */
+$transition-base: all 0.15s ease !default;
+
+/* Border Radius */
+$border-radius: 0.375rem !default;
+
+/* Buttons Variables */
+$btn-text-transform: none !default;
+$btn-letter-sparcing: 0.025rem !default;
+$btn-hover-box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1) 0 3px 6px
+  rgba(0, 0, 0, 0.08) !default;
+$btn-hover-translate-y: -1px !default;
+$btn-font-weight: 600 !default;
+$btn-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08) !default;
+
+/* Inputs Variables */
+$input-btn-font-size: 0.875rem !default;
+$input-btn-font-size-sm: 0.75rem !default;
+$input-btn-font-size-lg: 0.875rem !default;
+$input-box-shadow: none !default;
+$input-border-radius: $border-radius !default;
+$input-transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55) !default;
+$input-alternative-box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15),
+  0 1px 0 rgba(0, 0, 0, 0.02) !default;
+$input-focus-box-shadow: none !default;
+$input-color: $gray-600 !default;
+$input-focus-color: $input-color !default;
+$input-group-addon-focus-color: $input-focus-color !default;
+$input-focus-bg: $white !default;
+$input-group-addon-focus-bg: $input-focus-bg !default;
+$input-focus-border-color: rgba(50, 151, 211, 0.25) !default;
+$input-focus-color: $input-color !default;
+$input-group-addon-focus-border-color: $input-focus-border-color !default;
+
+/* Custom Variables */
+$yiq-text-dark: $gray-900 !default;
+$yiq-text-light: $white !default;
+$yiq-contrasted-threshold: 200 !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+);
+
+$font-size-base: 1rem !default;
+$font-size-xl: ($font-size-base * 1.5);
+$font-size-lg: ($font-size-base * 1.25);
+$font-size-sm: ($font-size-base * 0.875);
+$font-size-xs: ($font-size-base * 0.75);
+$line-height-base: 1.5 !default;
+
+$navbar-vertical-box-shadow: 0 0 2rem 0 rgba(136, 152, 170, 0.15) !important;
+$navbar-vertical-width: 250px !default;
+$navbar-vertical-padding-x: 1.5rem !default;
+$navbar-vertical-nav-link-padding-x: 1.5rem !default;
+$navbar-vertical-nav-link-padding-y: 0.65rem !default;
+
+$border-color: $gray-200 !default;
+$navbar-light-bg: $white !default;
+$navbar-light-border-color: $border-color !default;
+$navbar-transition: all 0.15s linear !default;
+$navbar-padding-y: 1rem !default;
+$navbar-padding-x: 1rem !default;
+
+$text-muted: $gray-600 !default;
+
+$navbar-nav-link-padding-x: 1rem !default;
+$navbar-nav-link-padding-y: 1rem !default;
+$navbar-nav-link-font-size: 0.9rem !default;
+$navbar-nav-link-font-weight: 400 !default;
+$navbar-nav-link-text-transform: normal !default;
+$navbar-nav-link-letter-spacing: 0 !default;
+$navbar-nav-link-border-radius: $border-radius !default;
+$nav-link-padding-y: 0.25rem !default;
+$nav-link-padding-x: 0.75rem !default;
+$nav-link-color: $gray-700 !default;
+$nav-link-hover-color: theme-colors('primary') !default;
+$nav-link-disabled-color: $gray-600 !default;
+$navbar-icon-min-width: 2.25rem !default;
+$dropdown-item-padding-x: 1rem !default;
+$font-size-xs: ($font-size-base * 0.75);
+$spacer: 1rem !default;
+$card-border-radius: $border-radius !default;
+$navbar-dark-color: rgba($white, 0.95) !default;
+$navbar-dark-hover-color: rgba($white, 0.65) !default;
+$navbar-dark-active-color: rgba($white, 0.65) !default;
+$navbar-dark-disabled-color: rgba($white, 0.25) !default;
+
+$table-cell-padding: 1rem !default;
+$table-cell-padding-sm: 0.5rem !default;
+
+$table-bg: transparent !default;
+$table-accent-bg: rgba($black, 0.05) !default;
+$table-hover-bg: $gray-100 !default;
+$table-active-bg: $table-hover-bg !default;
+
+$table-border-width: $border-width !default;
+$table-border-color: $gray-200 !default;
+
+$table-head-bg: $gray-100 !default;
+$table-head-color: $gray-600 !default;
+$table-head-spacer-y: 0.75rem !default;
+
+$table-head-font-size: 0.65rem !default;
+$table-head-font-weight: $font-weight-bold !default;
+$table-head-text-transform: uppercase !default;
+$table-head-letter-spacing: 1px !default;
+
+$table-body-font-size: 0.8125rem !default;
+
+$table-dark-bg: #000 !default;
+$table-dark-accent-bg: rgba($white, 0.05) !default;
+$table-dark-hover-bg: rgba($white, 0.075) !default;
+$table-dark-border-color: lighten(#000, 7%) !default;
+$table-dark-color: $body-bg !default;
+
+$table-dark-head-bg: lighten(#000, 4%) !default;
+$table-dark-head-color: lighten(#000, 35%) !default;
+$border-color: $gray-200 !default;

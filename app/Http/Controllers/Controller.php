@@ -11,7 +11,10 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-
+    /* ==================== Variables ======================== */
+    public $activeCode = 1;
+    public $inactiveCode = 2;
+    
     /* ==================== Functions ======================== */
     
     /**
