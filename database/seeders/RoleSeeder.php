@@ -18,5 +18,10 @@ class RoleSeeder extends Seeder
             "name" => "Super Admin",
             "guard_name" => "Backoffice"
         ]);
+
+        Role::create([
+            "name" => "Invitado",
+            "guard_name" => "Backoffice"
+        ]);
     }
 }

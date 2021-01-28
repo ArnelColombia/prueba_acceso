@@ -16,7 +16,7 @@ class UsersSeeder extends Seeder
      */
     public function run()
     {
-        User::create([
+        $user = User::create([
             "uid" => Hash::make("Nelson Arevalo"),
             "fullname" => "Nelson Arevalo",
             "email" => "nelson.arevalo2021@outlook.com",
@@ -29,5 +29,7 @@ class UsersSeeder extends Seeder
             "verifited_at" => Carbon::parse("00-00-00 00:00:00")->format("Y-m-d H:i:s"),
             "verification_code" => 0
         ]);
+
+        $user->assignRole("Super Admin");
     }
 }
