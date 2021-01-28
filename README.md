@@ -14,3 +14,11 @@ Cuando ya hallas realizado la clonación del proyecto, ingresas a la carpeta des
 3. `php artisan migrate` para ejecutar las migraciones establecidas.
 4. `php artisan db:seed` para ejecutar los seeders.
 5. `php artisan passport:install` para crear la llave de la api.
+6. `npm run dev` para poder hacer la primera compilación.
+
+## Ejecutar el proyecto
+
+Para poder ejecutar el proyecto se deben ejecutar en dos consolas diferentes los siguientes comandos.
+
+1. `php artisan serve`
+2. `npm run watch`
