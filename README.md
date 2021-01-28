@@ -9,4 +9,8 @@ Para poder clonar el proyecto puedes realizarlo ejecutando el siguiente comando 
 
 Cuando ya hallas realizado la clonación del proyecto, ingresas a la carpeta desde la terminal y ejecutas los siguientes comandos:
 
-`composer install`
+1. `composer install` para instalar las librerias de composer y php.
+2. `npm i o npm install` para instalar las librerias de npm y node.
+3. `php artisan migrate` para ejecutar las migraciones establecidas.
+4. `php artisan db:seed` para ejecutar los seeders.
+5. `php artisan passport:install` para crear la llave de la api.
